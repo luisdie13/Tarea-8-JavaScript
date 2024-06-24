@@ -14,9 +14,7 @@ function crearCuentaBancaria(saldoInicial) {
             console.log("La cantidad a retirar debe ser mayor a cero y no exceder el saldo disponible.")
         }
     }
-
     return {
-
         consultarSaldo: function () {
             return saldo;
         },
@@ -28,7 +26,6 @@ function crearCuentaBancaria(saldoInicial) {
         }
     };
 }
-
 var miCuenta = crearCuentaBancaria(1000);
 console.log("Saldo inicial: " + miCuenta.consultarSaldo());
 miCuenta.realizarDeposito(500);
